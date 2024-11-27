@@ -14,5 +14,6 @@ public class Main {
 
             default -> e1.attendance(false);
         }
+        e1.calculateWage();
     }
 }

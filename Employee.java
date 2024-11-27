@@ -15,6 +15,17 @@ public class Employee {
             System.out.println("Employee is absent");
         }
     }
+
+    public void calculateWage(){
+        if(attendence){
+            dailySalary = normalWorkDay*salPerHour;
+            System.out.println(dailySalary);
+        }
+        else{
+            dailySalary = 0;
+            System.out.println(dailySalary);
+        }
+    }
     Employee(String name, int id){
         this.name = name;
         this.id = id;
